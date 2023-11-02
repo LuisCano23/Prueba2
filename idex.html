@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <h2 class="titulo1">Calculadora de sueldo</h2>
+    <br>
+    <h3>Ingrese sus datos:</h3>
+        <p>Nombre:
+            <span id="nombre"></span>
+            <br>
+            <button onclick="registrarNombre()">
+                Ingresar Nombre
+            </button>
+        </p>
+        <p>Sueldo:
+            <span id="sueldoBase">0</span>
+            <br>
+            <button onclick="registrarSueldo()">
+                Ingresar Sueldo
+            </button>
+        </p>
+    <br>    
+    <select name="tipo" id="contratos">
+        <option value="honorario">Honorarios</option>
+        <option value="indefinido">Pzo.Fijo/Indefinido</option>
+    </select>
+    <br>
+        <h3 class="calculo">Calcudo sueldo liquido:
+            <span id="sueldoFinal">0</span>
+            <br>
+            <button onclick="sueldoFinal()">Calcular</button>
+        </h3>
+    <br>
+    <button onclick="vaciarDatos()">Limpiar</button>    
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
